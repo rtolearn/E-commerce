@@ -1,0 +1,122 @@
+
+h1{
+    position: relative;
+    text-align: center;
+}
+
+
+#list{
+    width: 800px;
+    height: fit-content;
+
+    border: 2px solid black;
+
+    position: relative;
+    top:0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Layout for the content of the list */
+#item{
+    width: 700px;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+
+    position: relative;
+    top:0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+#image-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px 10px 10px;
+}
+#image-cart img{
+    width: 200px;
+    height: fit-content;
+
+    border-radius: 10px;
+}
+#item #item-info-cart{
+    width: 500px;
+    text-align:left;
+}
+#item #item-info-cart #price-cart{
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#item #item-info-cart #price-cart h3{
+   margin-right: 40px;
+}
+#item #item-info-cart #buttonFinalDecision{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#item #item-info-cart #buttonFinalDecision button:hover{
+    transform: scale(1.05);
+    background-color: burlywood;
+}
+
+#item #item-info-cart #buttonFinalDecision button{
+    width: 150px;
+    height: 50px;
+
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+ul{
+    position: relative;
+    top:0;
+    bottom: 0; 
+    left: -25px;
+    right: 0;
+    margin: auto;
+
+    
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

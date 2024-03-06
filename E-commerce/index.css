@@ -1,0 +1,591 @@
+body{
+ margin: 0;
+}
+/* Navigation bar__________________________________________________________________________________________________ */
+#navigation-bar{
+
+    width: 80%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid lightgray;
+    
+
+    position: relative;
+
+    margin:  auto;
+    
+}
+
+.center{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation-header h4{
+    margin: 10px 20px 10px 20px;
+}
+
+/* #navigation-personal-info svg{
+    margin: 0 40px 10px 0;
+} */
+
+#navigation-personal-info img{
+    width: 75px;
+    height: 75px;
+}
+
+/* Images of the item______________________________________________________________________________________________ */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+
+main #images{
+    width: 60%;
+    margin-right: 100px; 
+}
+main #images .main-image{
+    width: 500px;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+
+main #images #main-image-location{
+    margin: 0 auto;
+}
+
+main #images #main-image-location:hover{
+    
+    opacity: 0.5;
+}
+
+
+main #images #image-thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+   
+    margin:  40px auto;
+}
+
+main #images #image-thumbnail img{
+    width: 100px;
+    height: 100px;
+    margin:  0 10px;
+    border-radius: 10px;
+}
+
+main #images #image-thumbnail img:hover{
+    background-color: aliceblue;
+    opacity: 0.5;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+/* Item Info_____________________________________________________________________________________________________________ */
+#item-info{
+    width:40%;
+}
+#item-info #discountPrice{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#item-info #discountPrice h5{
+    margin-left: 10px;
+    display: flex;
+    padding: 5px;
+    border:1px black solid;
+    border-radius: 5px;
+}
+
+#originalPrice{
+    margin-top: -15px;
+}
+
+#item-info #action{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.center h3{
+    margin: 0 20px;
+    background-color: beige;
+    padding: 10px;
+}
+
+
+
+/* lightBox */
+#light-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    display: none;
+}
+
+/* <!-- Display the lightBox -->
+<div id="light-box">
+    <div id="content-light-box">
+        <!-- X, cross to exit the page -->
+        <svg  id="exitLightBoxButton"  xmlns="http://www.w3.org/2000/svg">
+            <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" 
+            fill="#69707D" 
+            
+            />
+        </svg> 
+        <!-- Image in the light box -->
+        <div id="image-light-box" >  </div>
+        <div id="image-thumbnail-lightBox">
+                <img  id="image-thumbnail-lightBox-1"   src="images/image-product-1-thumbnail.jpg" />
+                <img  id="image-thumbnail-lightBox-2"   src="images/image-product-2-thumbnail.jpg" />
+                <img  id="image-thumbnail-lightBox-3"   src="images/image-product-3-thumbnail.jpg" />
+                <img  id="image-thumbnail-lightBox-4"   src="images/image-product-4-thumbnail.jpg" />
+        </div>
+    </div>
+</div> */
+
+#light-box #content-light-box svg{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    color: rgba(240, 238, 238, 0.829);
+
+}
+
+#light-box #content-light-box{
+    width: 700px;
+    height: 400px;
+    border: 2px white solid;
+} 
+
+#light-box #content-light-box .thumbnails-lightBox{
+    width: 300px;
+    height:250px;
+    display: block;
+    margin: 30px 0px 50px 200px;
+    border-radius: 10px;
+} 
+
+#light-box #content-light-box #image-thumbnail-lightBox{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+   margin: 0 auto;
+
+} 
+
+#light-box #content-light-box #image-thumbnail-lightBox img{
+    
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+ 
+ } 
+
+
+#light-box.active{
+    display: flex;
+    background-color: rgb(0,0,0,0.7);
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%; 
+    height: 100%;
+}
+
+/* Cart icon___________________________________________________________________________________ */
+#cart{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+#cart #purchasedItem{
+    background-color: rgb(243, 22, 14);
+    width: 15px;
+    height: 15px;
+
+    padding: 10px;
+    margin-left: 10px;
+
+    text-align: center;
+    border-radius: 5px;
+}
+
+#cart #purchasedItem.jumping{
+    animation-name: iconJumping;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconJumping{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* Button "Add to the cart"____________________________________________________________________________________________ */
+#addCartButton{
+    width: 300px;
+    height: 50px;
+    background-color:  rgb(233, 192, 131);;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-size: larger;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addCartButton svg{
+   width: 100px;
+   height: 20px;
+
+   margin-left: 10px;
+ 
+}
+#addCartButton h4{
+    width: 150px;
+    height: 25px;
+    padding: 0;
+    
+}
+
+
+#addCartButton:hover{
+    background-color: rgb(214, 151, 55);
+    transform: scale(1.05);
+    transform: translateY(5px);
+}
+
+ /* Responsive code ------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 950px){
+    main #images #image-thumbnail{
+        position: relative;
+        transform: translateX(5px);
+    }
+    main #images .main-image{
+        width: 350px;
+        height: 250px;
+      
+    }
+    main #images #image-thumbnail img{
+        width: 50px;
+        height: 50px;
+
+    } 
+    main #images{
+        width: 55%;
+        margin-right: 20px; 
+    }
+    #item-info{
+        width:45%;
+        font-size: smaller;
+    }
+
+    #navigation-bar{
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 780px){
+    body{
+        text-align: center;
+    }
+    main{
+        display: block;
+        width: 80%;
+    }
+    
+    main #images{
+        width: 100%;
+        margin: 0 auto;
+    }
+    main #images .main-image{
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+        margin: 10px auto;
+    }
+    
+    
+    main #images #image-thumbnail img{
+        width: 100px;
+        height: 100px;
+        margin:  0 10px;
+        border-radius: 10px;
+    }
+
+    /* Item information */
+    #item-info{
+        width:80%;
+        margin: 0 auto;
+        font-size: large;
+    }
+
+    #item-info #discountPrice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 0 auto;
+    }
+    
+    #item-info #discountPrice h5{
+        
+        display: flex;
+        padding: 5px;
+        border:1px black solid;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+    #originalPrice{
+        margin-top: 0px;
+        text-decoration: line-through;
+    }
+    
+    #item-info #action{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+    
+    }
+    #totalAmount{
+        float: left;
+    }
+
+    /* Navigation bar */
+    #navigation-bar{
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        position: relative;
+        margin:  auto;
+    }
+
+    #navigation-header h4{
+        margin: 5px 10px 5px 10px;
+    }
+
+    #light-box #content-light-box{
+        width: 500px;
+        height: 400px;
+        border: 2px white solid;
+    } 
+    
+    #light-box #content-light-box .thumbnails-lightBox{
+        width: 250px;
+        height:200px;
+        display: block;
+        margin: 30px 0px 70px 130px;
+        border-radius: 10px;
+    } 
+    
+    #light-box #content-light-box #image-thumbnail-lightBox{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 20px;
+       height: 20px;
+       margin: 0 auto;
+    
+    } 
+    
+}
+
+@media  screen and (max-width:670px){
+    main #images .main-image{
+        width: 300px;
+        height: 250px;
+        margin: 20px auto;
+    }
+    /* Navigation bar */
+    #navigation-bar #navigation-header h4{
+        display: none;
+    }
+    #navigation-bar {
+        display: flex;
+    }
+
+    
+}
+@media screen and (max-width: 500px){
+ 
+    main #images .main-image{
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    main #images #image-thumbnail img{
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+
+    } 
+    main #images{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #item-info{
+        width:45%;
+        font-size:larger;
+    }
+
+     /* Navigation bar */
+     #navigation-bar{
+        width: 30%;
+        height: auto;
+        display: block;
+        border-bottom: 1px solid lightgray;   
+    }
+
+    #addCartButton{
+        width: 200px;
+        height: 50px;
+        background-color:  rgb(233, 192, 131);;
+        margin-left: 20px;
+        border-radius: 10px;
+
+        padding: 10px;
+        
+    }
+    
+    #addCartButton h4{
+        width: 125px;
+        padding-left: 30px;
+    }
+    #addCartButton svg{
+        width: 50px; 
+        height: 20px;
+    }
+    /* Navigation bar */
+    #navigation-bar #navigation-header h4{
+        display: none;
+    }
+    #navigation-bar {
+        display: flex;
+    }
+
+    #light-box.active{
+        display: none;
+    }
+   
+
+}
+
+
+
+@media screen and (max-width: 400px){
+ 
+    main #images .main-image{
+        width: 200px;
+        height: 150px;
+        margin: 20px auto;
+    }
+    main #images #image-thumbnail img{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+
+    } 
+    main #images{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #item-info{
+        width:45%;
+        font-size:large;
+    }
+
+     /* Navigation bar */
+    #navigation-bar #navigation-header h4{
+        display: none;
+    }
+    #navigation-bar {
+        display: flex;
+    }
+
+    #addCartButton{
+        width: 150px;
+        height: 50px;
+        background-color:  rgb(233, 192, 131);;
+        margin-left: 20px;
+        border-radius: 10px;
+        font-size: medium;
+        padding: 0px 20px;
+        
+    }
+    
+    #addCartButton h4{
+        width: 95px;
+        height: 18px;
+        padding-right: 30px;
+    }
+    #addCartButton svg{
+        width: 50px; 
+        height: 20px;
+       
+        padding-left: 30px;
+    }
+
+    #action h1{
+        font-size: smaller;
+    }
+
+}
